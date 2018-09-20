@@ -1,0 +1,220 @@
+{
+  "workbench.colorCustomizations": {
+    "[Base16 Grayscale Dark]": {
+    },
+   "[Base16 Grayscale Light]": {
+      "activityBar.background": "#dddddd",
+      "activityBar.border": "#000000",
+      "breadcrumbPicker.background": "#ffffff",
+      "contrastActiveBorder": "#000000",
+      "contrastBorder": "#000000",
+      "diffEditor.border": "#000000",
+      "dropdown.border": "#000000",
+      "dropdown.listBackground": "#ffffff",
+      "editor.background": "#ffffff",
+      "editor.findMatchBorder": "#000000",
+      "editor.findMatchHighlightBackground": "#e4d4d4",
+      "editor.foreground": "#000000",
+      "editor.lineHighlightBackground": "#ffffff",
+      "editor.lineHighlightBorder": "#aaaaaa",
+      "editor.rangeHighlightBorder": "#000000",
+      "editor.selectionBackground": "#c0c0c0",
+      "editor.selectionForeground": "#000000",
+      "editor.selectionHighlightBackground": "#e4e4e4",
+      "editor.selectionHighlightBorder": "#000000",
+      "editor.wordHighlightBackground": "#ffffff",
+      "editor.wordHighlightBorder": "#444444",
+      "editor.wordHighlightStrongBackground": "#ffffff",
+      "editor.wordHighlightStrongBorder": "#000000",
+      "editorBracketMatch.border": "#000000",
+      "editorGroup.border": "#000000",
+      "editorGroup.emptyBackground": "#ffffff",
+      "editorGroupHeader.noTabsBackground": "#ffffff",
+      "editorGroupHeader.tabsBorder": "#000000",
+      "editorLineNumber.foreground": "#000000",
+      "editorWidget.border": "#000000",
+      "focusBorder": "#000000",
+      "list.focusBackground": "#ffffff",
+      "list.focusForeground": "#000000",
+      "list.highlightForeground": "#000000",
+      "list.hoverBackground": "#cccccc",
+      "list.hoverForeground": "#ffffff",
+      "menu.selectionBorder": "#000000",
+      "notificationCenter.border": "#000000",
+      "notifications.foreground": "#000000",
+      "panelTitle.activeBorder": "#000000",
+      "sideBar.background": "#ffffff",
+      "sideBar.border": "#000000",
+      "sideBar.foreground": "#000000",
+      "sideBarSectionHeader.background": "#ffffff",
+      "statusBar.background": "#ffffff",
+      "statusBar.foreground": "#000000",
+      "statusBar.noFolderBackground": "#ffffff",
+      "statusBar.noFolderForeground": "#000000",
+      "tab.activeBackground": "#ffffff",
+      "tab.activeBorder": "#000000",
+      "tab.activeForeground": "#000000",
+      "tab.border": "#000000",
+      "tab.inactiveBackground": "#ffffff",
+      "tab.inactiveForeground": "#000000",
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Base16 Grayscale Light]": {
+      "textMateRules": [
+        {
+          "name": "Constants",
+          "scope": "constant",
+          "settings": {
+            "foreground": "#464646",
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "Integers",
+          "scope": "constant.numeric",
+          "settings": {
+            "foreground": "#464646",
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "Floats",
+          "scope": "none",
+          "settings": {
+            "foreground": "#464646",
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "Boolean",
+          "scope": "none",
+          "settings": {
+            "foreground": "#464646",
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "Classes",
+          "scope": "support.class, entity.name.class, entity.name.type.class",
+          "settings": {
+            "foreground": "#000000",
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "Punctuation",
+          "scope": "punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array",
+          "settings": {
+            "foreground": "#464646"
+          }
+        },
+        {
+          "name": "Delimiters",
+          "scope": "none",
+          "settings": {
+            "foreground": "#464646"
+          }
+        },
+        {
+          "name": "Keywords",
+          "scope": "keyword",
+          "settings": {
+            "foreground": "#747474",
+            "fontStyle": "underline"
+          }
+        },
+        {
+          "name": "Operators",
+          "scope": "keyword.operator",
+          "settings": {
+            "foreground": "#464646",
+            "fontStyle": ""
+          }
+        }
+      ],
+      "functions": {
+        "fontStyle": "",
+        "foreground": "#000000"
+      },
+      "variables": "#000000",
+      "keywords": {
+        "fontStyle": "underline",
+        "foreground": "#000000"
+      },
+      "comments": {
+        // "fontStyle": "italic",
+        "foreground": "#979797"
+      },
+      "types": {
+        "foreground": "#000000"
+        // "fontStyle": ""
+      }
+    }
+  },
+  "workbench.activityBar.visible": false,
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "hidden",
+  "vim.handleKeys": { "<C-f>": false, "<C-n>": true, "<C-p>": true },
+  "vim.insertModeKeyBindings": [ { "before": [ "z", "z" ], "after": [ "<Esc>" ] } ],
+  "vim.cursorStylePerMode.visual": "line",
+  "vim.cursorStylePerMode.normal": "block-outline",
+  "editor.fontFamily": "'Fira Code', 'Courier New', Consolas, 'Operator Mono Lig', 'Lucida Console', Monaco, 'SF Mono', 'Fira Code', Iosevka, monospace",
+  // "editor.fontWeight": "400",
+  "workbench.editor.showTabs": false,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 2,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "haskell.hlint.run": "onSave",
+  "terminal.explorerKind": "external",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "window.title": "${dirty}${activeEditorShort} :: ${rootName}",
+  "editor.wordSeparators": "`~!@%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.cursorBlinking": "phase",
+  "git.autofetch": true,
+  "files.eol": "\n",
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "none",
+  "editor.overviewRulerBorder": false,
+  "extensions.ignoreRecommendations": false,
+  "editor.lineNumbers": "off",
+  "advancedNewFile.exclude": { "node_modules": true },
+  "tslint.autoFixOnSave": true,
+  "editor.accessibilitySupport": "off",
+  "workbench.statusBar.feedback.visible": false,
+  /*
+    https://stackoverflow.com/questions/40891692/any-way-to-disable-or-hide-visual-studio-codes-scrollbar-minimap
+  */
+  // "editor.scrollbar.horizontal": "hidden",
+  // "editor.scrollbar.vertical": "hidden",
+  "editor.renderIndentGuides": false,
+  "editor.renderControlCharacters": true,
+  "workbench.editor.showIcons": false,
+  "workbench.tree.horizontalScrolling": true,
+  "http.proxy": "http://localhost:8123",
+  "editor.selectionHighlight": false,
+  "indenticator.inner.showHighlight": false,
+  "editor.roundedSelection": false,
+  "editor.showFoldingControls": "always",
+  "indenticator.inner.style": "inset",
+  "indenticator.style": "inset",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "zenMode.fullScreen": false,
+  "todohighlight.isEnable": true,
+  "workbench.colorTheme": "precision",
+  "todohighlight.defaultStyle": {
+    "backgroundColor": "#000000",
+    "color": "#ffffff"
+  },
+  "todohighlight.keywords": [ "NOTE", "XXX" ],
+  "terminal.integrated.rendererType": "dom",
+  "workbench.statusBar.visible": true,
+  "workbench.commandPalette.preserveInput": true,
+  // "editor.fontWeight": "500",
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "same",
+  "workbench.iconTheme": null,
+  "breadcrumbs.enabled": false,
+}
