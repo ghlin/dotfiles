@@ -1,0 +1,6 @@
+[Scheme]
+Name=Gay
+ColorForeground=#ffffff
+ColorBackground=#000000
+ColorPalette=rgb(0,0,0);rgb(215,95,95);rgb(0,175,135);rgb(175,215,95);rgb(145,91,154);rgb(108,108,206);rgb(0,175,215);rgb(255,255,255);rgb(10,10,10);rgb(215,135,175);rgb(95,175,95);rgb(215,175,95);rgb(186,114,198);rgb(154,154,255);rgb(135,175,255);rgb(255,255,255)
+ColorForeground=#a8a8a8

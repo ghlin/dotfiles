@@ -24,18 +24,15 @@ function restore_config_for {
 
 [[ -d $DEST ]] || mkdir $DEST -p
 
-restore_config_for Code
-restore_config_for fontconfig
-restore_config_for htop
-restore_config_for tilix
-restore_config_for zsh
-restore_config_for tmux
+for tape in `ls`; do
+  restore_config_for $tape
+done
 
 # we're inside $DOTFILE_DIR/tapes
-[[ -d nvim ]] || mkdir vim -p
-[[ -d nvim/.vim ]] || (
+[[ -d nvim ]] || (
+  mkdir nvim/.config -p;
   echo " => downloading vim config";
-  git clone https://git.coding.net/ghlin/vimrc.git nvim/.vim
+  git clone https://git.coding.net/ghlin/vimrc.git nvim/.config/nvim
 )
 
 restore_config_for nvim
