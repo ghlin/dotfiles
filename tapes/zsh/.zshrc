@@ -37,7 +37,7 @@ update_term_info() {
 
 # neovim ignores t_xx, so reshape cursor
 # after each prompt.
-function precmd() {
-  echo "\033[0 q"
-}
+# function precmd() {
+#   print "\033[0 q"
+# }
 
