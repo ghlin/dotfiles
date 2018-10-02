@@ -45,6 +45,7 @@
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="include-all-monitors" type="bool" value="true"/>
+      <property name="sort-order" type="uint" value="4"/>
     </property>
     <property name="plugin-15" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -79,6 +80,7 @@
         <value type="string" value="audacious"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="clipman"/>
+        <value type="string" value="cloud music"/>
         <value type="string" value="notes"/>
         <value type="string" value="remmina"/>
         <value type="string" value="ulauncher"/>
@@ -89,12 +91,12 @@
     <property name="plugin-7" type="string" value="showdesktop"/>
     <property name="plugin-11" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="audacious;bomi;GnomeMusic;rhythmbox;vlc"/>
+      <property name="mpris-players" type="string" value="audacious;bomi;ElectronNCM;GnomeMusic;netease-cloud-music;rhythmbox;vlc"/>
       <property name="show-notifications" type="bool" value="false"/>
       <property name="enable-wnck" type="bool" value="false"/>
       <property name="enable-multimedia-keys" type="bool" value="true"/>
       <property name="enable-mpris" type="bool" value="true"/>
-      <property name="blacklisted-players" type="string" value=""/>
+      <property name="blacklisted-players" type="string" value="ElectronNCM;vlc"/>
     </property>
     <property name="plugin-16" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
@@ -111,7 +113,8 @@
     </property>
     <property name="plugin-2" type="string" value="applicationsmenu">
       <property name="button-icon" type="string" value="/usr/share/archlinux/icons/archlinux-icon-crystal-128.svg"/>
-      <property name="button-title" type="string" value=" Duel!"/>
+      <property name="button-title" type="string" value=" Duel! "/>
+      <property name="show-generic-names" type="bool" value="false"/>
     </property>
     <property name="plugin-5" type="string" value="launcher">
       <property name="items" type="array">

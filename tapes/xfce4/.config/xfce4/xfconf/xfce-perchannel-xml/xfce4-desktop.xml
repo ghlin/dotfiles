@@ -29,13 +29,14 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ghlin/Pictures/my desktop is clean.jpg"/>
+          <property name="last-image" type="string" value="/home/ghlin/Pictures/wallhaven-681440.jpg"/>
           <property name="rgba1" type="array">
-            <value type="double" value="0.000000"/>
-            <value type="double" value="0.000000"/>
-            <value type="double" value="0.000000"/>
+            <value type="double" value="0.988235"/>
+            <value type="double" value="0.960784"/>
+            <value type="double" value="0.886275"/>
             <value type="double" value="1.000000"/>
           </property>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
@@ -236,8 +237,24 @@
     <property name="window-height" type="int" value="693"/>
   </property>
   <property name="desktop-icons" type="empty">
-    <property name="style" type="int" value="2"/>
+    <property name="style" type="int" value="1"/>
     <property name="single-click" type="bool" value="false"/>
     <property name="icon-size" type="uint" value="48"/>
+    <property name="file-icons" type="empty">
+      <property name="show-trash" type="bool" value="false"/>
+      <property name="show-filesystem" type="bool" value="false"/>
+      <property name="show-home" type="bool" value="false"/>
+      <property name="show-network-removable" type="bool" value="true"/>
+    </property>
+    <property name="tooltip-size" type="double" value="119.000000"/>
+    <property name="use-custom-font-size" type="bool" value="false"/>
+  </property>
+  <property name="windowlist-menu" type="empty">
+    <property name="show-submenus" type="bool" value="false"/>
+    <property name="show" type="bool" value="true"/>
+  </property>
+  <property name="desktop-menu" type="empty">
+    <property name="show-icons" type="bool" value="true"/>
+    <property name="show" type="bool" value="true"/>
   </property>
 </channel>

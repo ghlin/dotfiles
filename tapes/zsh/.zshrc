@@ -6,6 +6,11 @@ source $HOME/.antigen.zsh
 export DISABLE_AUTO_UPDATE="true"
 export DISABLE_LS_COLORS="true"
 
+plugins=(
+  git
+  archlinux
+)
+
 antigen use oh-my-zsh
 
 antigen bundle git

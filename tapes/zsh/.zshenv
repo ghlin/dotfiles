@@ -18,3 +18,11 @@ export XDG_CONFIG_HOME="$HOME/.config"
 if [[ $TILIX_ID ]]; then
   source /etc/profile.d/vte.sh
 fi
+
+# check if tty terminal
+TTY=$(tty)
+if [[ "${TTY: :-1}" == "/dev/tty" ]]; then
+  pushd /usr/share/kbd/consolefonts > /dev/null
+  setfont Tamsyn8x16r
+  popd > /dev/null
+fi
