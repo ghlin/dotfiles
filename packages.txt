@@ -40,6 +40,7 @@ babl
 baidupcs-git
 baobab
 bash
+bat
 bc
 bijiben
 bind-tools
@@ -127,6 +128,8 @@ dleyna-server
 dmraid
 dnsmasq
 dnssec-anchors
+docbook-xml
+docbook-xsl
 dosfstools
 double-conversion
 dtkcore
@@ -223,6 +226,7 @@ glew1.10
 glib-networking
 glib-perl
 glib2
+glib2-docs
 glibc
 glibmm
 glu
@@ -306,6 +310,7 @@ gstreamer0.10-base
 gstreamer0.10-base-plugins
 gthumb
 gtk-chtheme
+gtk-doc
 gtk-engine-aurora
 gtk-engine-murrine
 gtk-engines
@@ -766,6 +771,7 @@ libabw
 libaio
 libao
 libappindicator-gtk2
+libappindicator-gtk3
 libarchive
 libart-lgpl
 libass
@@ -805,6 +811,7 @@ libdatrie
 libdazzle
 libdbusmenu-glib
 libdbusmenu-gtk2
+libdbusmenu-gtk3
 libdc1394
 libdca
 libde265
@@ -871,6 +878,7 @@ libidn2
 libiec61883
 libimobiledevice
 libindicator-gtk2
+libindicator-gtk3
 libinput
 libiptcdata
 libisofs
@@ -1105,6 +1113,7 @@ man-db
 man-pages
 mariadb
 mariadb-clients
+mate-themes
 md2pdf
 mdadm
 media-player-info
@@ -1298,6 +1307,7 @@ pygobject2-devel
 pygtk
 pyqt5-common
 python
+python-anytree
 python-appdirs
 python-asn1crypto
 python-blinker
@@ -1319,6 +1329,7 @@ python-greenlet
 python-html5lib
 python-idna
 python-lockfile
+python-lxml
 python-markdown2
 python-msgpack
 python-neovim
@@ -1472,6 +1483,7 @@ smpeg
 snappy
 sound-theme-freedesktop
 soundtouch
+source-highlight
 spandsp
 speex
 speexdsp
@@ -1521,7 +1533,10 @@ thunderbird
 tilix
 tk
 tmux
+tomate-alarm-plugin
 tomate-gtk
+tomate-notify-plugin
+tomate-statusicon-plugin
 totem
 totem-plparser
 traceroute
@@ -1612,6 +1627,7 @@ xfce4-battery-plugin
 xfce4-cpufreq-plugin
 xfce4-cpugraph-plugin
 xfce4-datetime-plugin
+xfce4-dev-tools
 xfce4-diskperf-plugin
 xfce4-eyes-plugin
 xfce4-fsguard-plugin
@@ -1637,6 +1653,7 @@ xfce4-wavelan-plugin
 xfce4-whiskermenu-plugin
 xfce4-windowck-plugin
 xfconf
+xfdashboard-git
 xfdesktop-git
 xfsprogs
 xfsudo
