@@ -36,12 +36,12 @@
       <property name="&lt;Super&gt;w" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;s" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;c" type="string" value="xcalib -i -a"/>
       <property name="Print" type="string" value="xfce4-screenshooter  -r -s /home/ghlin/Desktop"/>
       <property name="&lt;Super&gt;Print" type="string" value="xfce4-screenshooter -w -s /home/ghlin/Desktop"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;v" type="string" value="/usr/bin/vim-anywhere gvim"/>
       <property name="&lt;Alt&gt;Return" type="string" value="tilix -q"/>
+      <property name="&lt;Super&gt;s" type="string" value="/usr/bin/xfdashboard -t"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -143,8 +143,6 @@
       <property name="&lt;Super&gt;3" type="string" value="workspace_3_key"/>
       <property name="&lt;Super&gt;4" type="string" value="workspace_4_key"/>
       <property name="&lt;Super&gt;5" type="string" value="workspace_5_key"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="left_workspace_key"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="right_workspace_key"/>
       <property name="&lt;Super&gt;Left" type="string" value="tile_left_key"/>
       <property name="&lt;Super&gt;Right" type="string" value="tile_right_key"/>
       <property name="&lt;Super&gt;Down" type="string" value="tile_down_key"/>
@@ -157,10 +155,26 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;w" type="string" value="fill_window_key"/>
       <property name="&lt;Super&gt;Delete" type="string" value="del_workspace_key"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Insert" type="string" value="add_adjacent_workspace_key"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Left" type="string" value="left_workspace_key"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Right" type="string" value="right_workspace_key"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Up" type="string" value="up_workspace_key"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Down" type="string" value="down_workspace_key"/>
     </property>
   </property>
   <property name="providers" type="array">
     <value type="string" value="xfwm4"/>
     <value type="string" value="commands"/>
+  </property>
+  <property name="xftaskbar" type="empty">
+    <property name="&lt;Super&gt;1" type="string" value="selgrp 1"/>
+    <property name="&lt;Super&gt;2" type="string" value="selgrp 2"/>
+    <property name="&lt;Super&gt;3" type="string" value="selgrp 3"/>
+    <property name="&lt;Super&gt;4" type="string" value="selgrp 4"/>
+    <property name="&lt;Super&gt;5" type="string" value="selgrp 5"/>
+    <property name="&lt;Super&gt;6" type="string" value="selgrp 6"/>
+    <property name="&lt;Super&gt;7" type="string" value="selgrp 7"/>
+    <property name="&lt;Super&gt;8" type="string" value="selgrp 8"/>
+    <property name="&lt;Super&gt;9" type="string" value="selgrp 9"/>
+    <property name="&lt;Super&gt;0" type="string" value="selgrp 10"/>
   </property>
 </channel>

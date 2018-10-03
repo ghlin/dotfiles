@@ -159,7 +159,7 @@
   "vim.insertModeKeyBindings": [ { "before": [ "z", "z" ], "after": [ "<Esc>" ] } ],
   "vim.cursorStylePerMode.visual": "line",
   "vim.cursorStylePerMode.normal": "block-outline",
-  "editor.fontFamily": "Inconsolata,Consolas, Iosevka, 'Courier New', monospace, Monaco, 'Lucida Console', 'SF Mono', 'Operator Mono Lig', 'Fira Code', 'Fira Code'",
+  "editor.fontFamily": "'Courier New', 'Lucida Console', Monaco, Inconsolata, Consolas, Iosevka, monospace, 'SF Mono', 'Operator Mono Lig', 'Fira Code', 'Fira Code'",
   // "editor.fontWeight": "400",
   "workbench.editor.showTabs": false,
   "editor.tabSize": 2,
@@ -202,7 +202,7 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "zenMode.fullScreen": false,
   "todohighlight.isEnable": true,
-  "workbench.colorTheme": "Ayu Dark",
+  "workbench.colorTheme": "Default High Contrast",
   "todohighlight.defaultStyle": {
     "backgroundColor": "#000000",
     "color": "#ffffff"
@@ -216,6 +216,6 @@
   "editor.wrappingIndent": "same",
   "workbench.iconTheme": null,
   "breadcrumbs.enabled": false,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 0,
   "editor.fontSize": 18,
 }
