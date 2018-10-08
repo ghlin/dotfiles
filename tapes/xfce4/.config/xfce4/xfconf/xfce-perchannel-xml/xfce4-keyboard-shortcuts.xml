@@ -23,23 +23,16 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
-      <property name="&lt;Alt&gt;F2" type="string" value="xfce4-appfinder --collapsed">
+      <property name="&lt;Alt&gt;F2" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
-      <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
-      <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Super&gt;w" type="string" value="xfce4-appfinder">
+      <property name="&lt;Super&gt;w" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Super&gt;c" type="string" value="xcalib -i -a"/>
-      <property name="Print" type="string" value="xfce4-screenshooter  -r -s /home/ghlin/Desktop"/>
-      <property name="&lt;Super&gt;Print" type="string" value="xfce4-screenshooter -w -s /home/ghlin/Desktop"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;v" type="string" value="/usr/bin/vim-anywhere gvim"/>
       <property name="&lt;Alt&gt;Return" type="string" value="tilix -q"/>
       <property name="&lt;Super&gt;s" type="string" value="/usr/bin/xfdashboard -t"/>
     </property>

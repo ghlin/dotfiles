@@ -1,10 +1,10 @@
 [Notes]
-PosX=810
-PosY=350
+PosX=656
+PosY=331
 Width=300
 Height=380
 TabsOrder=Fancy Color;Notes 2;Notes 3;
-LastTab=2
+LastTab=0
 Above=false
 Sticky=true
 Transparency=7

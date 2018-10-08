@@ -1,0 +1,68 @@
+favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,chromium.desktop,firefox.desktop,visual-studio-code.desktop,tomate-gtk.desktop,steam-native.desktop,audacious.desktop,deepin.com.qq.office.desktop,telegramdesktop.desktop
+recent=exo-terminal-emulator.desktop,xfce-settings-manager.desktop,deepin.com.qq.office.desktop,chromium.desktop,steam-native.desktop,visual-studio-code.desktop,exo-file-manager.desktop,exo-web-browser.desktop,audacious.desktop,exo-mail-reader.desktop
+button-title=BTW...\ 
+button-icon=/usr/share/archlinux/icons/archlinux-icon-crystal-128.svg
+button-single-row=true
+show-button-title=true
+show-button-icon=true
+launcher-show-name=false
+launcher-show-description=false
+launcher-show-tooltip=true
+item-icon-size=3
+hover-switch-category=true
+category-show-name=true
+category-icon-size=1
+load-hierarchy=true
+recent-items-max=10
+favorites-in-recent=true
+display-recent-default=false
+position-search-alternate=false
+position-commands-alternate=false
+position-categories-alternate=false
+menu-width=501
+menu-height=809
+menu-opacity=100
+command-settings=xfce4-settings-manager
+show-command-settings=true
+command-lockscreen=xflock4
+show-command-lockscreen=false
+command-switchuser=gdmflexiserver
+show-command-switchuser=false
+command-logout=xfce4-session-logout
+show-command-logout=true
+command-menueditor=menulibre
+show-command-menueditor=false
+command-profile=mugshot
+show-command-profile=false
+search-actions=5
+
+[action0]
+name=Man Pages
+pattern=#
+command=exo-open --launch TerminalEmulator man %s
+regex=false
+
+[action1]
+name=Web Search
+pattern=?
+command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
+regex=false
+
+[action2]
+name=Wikipedia
+pattern=!w
+command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
+regex=false
+
+[action3]
+name=Run in Terminal
+pattern=!
+command=exo-open --launch TerminalEmulator %s
+regex=false
+
+[action4]
+name=Open URI
+pattern=^(file|http|https):\\/\\/(.*)$
+command=exo-open \\0
+regex=true
+
