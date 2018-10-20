@@ -3,7 +3,7 @@
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
     <property name="ThemeName" type="string" value="TraditionalOk"/>
-    <property name="IconThemeName" type="string" value="hydroxygen"/>
+    <property name="IconThemeName" type="string" value="LinXP"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -17,13 +17,13 @@
     <property name="DPI" type="int" value="-1"/>
     <property name="Antialias" type="int" value="1"/>
     <property name="Hinting" type="int" value="1"/>
-    <property name="HintStyle" type="string" value="hintslight"/>
-    <property name="RGBA" type="string" value="rgb"/>
+    <property name="HintStyle" type="string" value="hintmedium"/>
+    <property name="RGBA" type="string" value="none"/>
   </property>
   <property name="Gtk" type="empty">
     <property name="CanChangeAccels" type="empty"/>
     <property name="ColorPalette" type="empty"/>
-    <property name="FontName" type="string" value="Source Han Sans CN 12"/>
+    <property name="FontName" type="string" value="Source Han Sans CN 11"/>
     <property name="MonospaceFontName" type="string" value="Inconsolata 16"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
@@ -38,6 +38,6 @@
     <property name="ColorScheme" type="string" value=""/>
   </property>
   <property name="Xfce" type="empty">
-    <property name="LastCustomDPI" type="int" value="87"/>
+    <property name="LastCustomDPI" type="int" value="98"/>
   </property>
 </channel>

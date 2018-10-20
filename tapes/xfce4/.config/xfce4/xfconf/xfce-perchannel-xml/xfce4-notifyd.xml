@@ -4,6 +4,7 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="audacious"/>
+      <value type="string" value="calibre"/>
       <value type="string" value="chromium"/>
       <value type="string" value="com.gexperts.Tilix"/>
       <value type="string" value="deepin-screen-recorder"/>

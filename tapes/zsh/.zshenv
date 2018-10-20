@@ -1,5 +1,10 @@
 export PATH=$HOME/.local/lib/llvm-2018-08-26/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.local/share/go/bin:$PATH
 export EDITOR=nvim
+
+# fix 'move to Trash' in Visual Studio Code
+# see https://github.com/Microsoft/vscode/issues/13189#issuecomment-370582941
+export ELECTRON_TRASH=gio
+
 alias open=xdg-open
 alias vim=nvim
 alias vi=nvim

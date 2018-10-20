@@ -45,4 +45,3 @@ update_term_info() {
 # function precmd() {
 #   print "\033[0 q"
 # }
-

@@ -60,13 +60,15 @@
     </property>
     <property name="plugin-12" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="thunar"/>
         <value type="string" value="vlc"/>
+        <value type="string" value="redshift-gtk"/>
         <value type="string" value="tomboy"/>
         <value type="string" value="screenkey"/>
         <value type="string" value="bomi"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="telegramdesktop"/>
         <value type="string" value="clementine"/>
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="networkmanager applet"/>
         <value type="string" value="steam"/>
         <value type="string" value="task manager"/>
         <value type="string" value="deadbeef"/>
@@ -113,5 +115,13 @@
       <property name="digital-format" type="string" value="%R"/>
     </property>
     <property name="plugin-1" type="string" value="whiskermenu"/>
+    <property name="clipman" type="empty">
+      <property name="settings" type="empty">
+        <property name="show-qr-code" type="bool" value="true"/>
+      </property>
+      <property name="tweaks" type="empty">
+        <property name="never-confirm-history-clear" type="bool" value="false"/>
+      </property>
+    </property>
   </property>
 </channel>

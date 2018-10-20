@@ -1,5 +1,22 @@
 {
   "workbench.colorCustomizations": {
+    "[Ayu Dark]": {
+      "editor.background": "#000000",
+      "statusBar.background": "#000000",
+      "statusBar.border": "#ffffff",
+      "sideBar.border": "#ffffff",
+      "activityBar.border": "#ffffff",
+      "panel.border": "#ffffff",
+      "contrastActiveBorder": "#ffffff",
+      "contrastBorder": "#aaaaaa",
+      "dropdown.border": "#ffffff",
+      "editorGroup.border": "#ffffff",
+      "panel.background": "#101010",
+      "sideBar.background": "#101010",
+      "tab.border": "#ffffff",
+      "panelTitle.activeBorder": "#dddddd",
+      "editorWidget.border": "#ffffff",
+    },
     "[Base16 Grayscale Dark]": {
     },
    "[Base16 Grayscale Light]": {
@@ -154,7 +171,7 @@
   },
   "workbench.activityBar.visible": false,
   "window.enableMenuBarMnemonics": false,
-  "window.menuBarVisibility": "hidden",
+  "window.menuBarVisibility": "default",
   "vim.handleKeys": { "<C-f>": false, "<C-n>": true, "<C-p>": true },
   "vim.insertModeKeyBindings": [ { "before": [ "z", "z" ], "after": [ "<Esc>" ] } ],
   "vim.cursorStylePerMode.visual": "line",
@@ -220,4 +237,13 @@
   "vim.foldfix": true,
   "workbench.colorTheme": "Default High Contrast",
   "terminal.integrated.fontSize": 18,
+  "editor.suggest.localityBonus": true,
+  "editor.tabCompletion": "on",
+  "files.watcherExclude": {
+    "**/.buildd": true
+  },
+  "files.exclude": {
+    "**/dist": true,
+    "**/node_modules": true
+  },
 }
