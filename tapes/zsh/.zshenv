@@ -11,8 +11,6 @@ alias vi=nvim
 alias s=stack
 alias setup-proxy="source $HOME/.local/share/setup-proxy.sh"
 alias stack-new="stack --resolver=lts-10.2 new "
-alias todo=task
-alias rem="task add"
 alias goodjob="task del"
 alias ag='ag --color-match=4'
 alias :e=nvim
