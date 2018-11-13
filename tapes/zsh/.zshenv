@@ -1,4 +1,4 @@
-export PATH=$HOME/.local/lib/llvm-2018-08-26/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.local/share/go/bin:$PATH
+export PATH=$HOME/.local/lib/llvm/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.local/share/go/bin:$PATH
 export EDITOR=nvim
 
 # fix 'move to Trash' in Visual Studio Code

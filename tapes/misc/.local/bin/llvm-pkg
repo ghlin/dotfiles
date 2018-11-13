@@ -1,0 +1,97 @@
+#!/bin/bash
+
+# tuna mirror, see https://mirrors.tuna.tsinghua.edu.cn/help/llvm/
+# LLVM_REPO_ROOT=https://git.llvm.org/git
+LLVM_REPO_ROOT=https://mirrors.tuna.tsinghua.edu.cn/git/llvm
+
+LLVM_TREE_DIR=$HOME/.local/lib/llvm-tree
+LLVM_BUILD_DIR=$HOME/.local/lib/llvm-build
+LLVM_INSTALL_DIR=$HOME/.local/lib/llvm
+
+# remember to add $LLVM_INSTALL_DIR/bin to PATH.
+
+function install_component() {
+  echo " *** Cloning component $1 from $LLVM_REPO_ROOT/$2"
+  git clone $LLVM_REPO_ROOT/$2.git $LLVM_TREE_DIR/$1 --depth=1
+}
+
+function update_component() {
+  echo " *** Updating component $1: pulling from $LLVM_REPO_ROOT/$2"
+  cd $LLVM_TREE_DIR/$1
+  git pull
+}
+
+
+function install_llvm() {
+  [ -d $HOME/.local/lib ] || mkdir $HOME/.local/lib
+
+  install_component /                        llvm
+  install_component /tools/clang             clang
+  install_component /tools/clang/tools/extra clang-tools-extra
+  install_component /tools/lld               lld
+  install_component /projects/compiler-rt    compiler-rt
+  install_component /projects/libcxx         libcxx
+  install_component /projects/libcxxabi      libcxxabi
+}
+
+function update_llvm() {
+  update_component /                        llvm
+  update_component /tools/clang             clang
+  update_component /tools/clang/tools/extra clang-tools-extra
+  update_component /tools/lld               lld
+  update_component /projects/compiler-rt    compiler-rt
+  update_component /projects/libcxx         libcxx
+  update_component /projects/libcxxabi      libcxxabi
+}
+
+function refresh_build() {
+  [ -d $LLVM_BUILD_DIR ] || mkdir $LLVM_BUILD_DIR
+
+  cd $LLVM_BUILD_DIR
+  cmake $LLVM_TREE_DIR                         \
+    -G Ninja                                   \
+    -DLLVM_BUILD_TESTS=0                       \
+    -DLLVM_INCLUDE_TESTS=0                     \
+    -DCMAKE_BUILD_TYPE=Release                 \
+    -DCMAKE_INSTALL_PREFIX=$LLVM_INSTALL_DIR
+}
+
+function run_build() {
+  cd $LLVM_BUILD_DIR
+  ninja
+}
+
+function run_install() {
+  cd $LLVM_BUILD_DIR
+  ninja install
+}
+
+function build_and_install() {
+  echo " *** Running cmake"
+  refresh_build
+  echo " *** Build"
+  run_build
+  echo " *** Build done, install to $LLVM_INSTALL_DIR/..."
+  run_install
+  echo " *** Install done"
+}
+
+case $1 in
+  install)
+    echo " *** Cloning llvm components to $LLVM_TREE_DIR/..."
+    install_llvm
+    echo " *** All components cloned"
+    build_and_install
+    echo " *** Remember to add $LLVM_INSTALL_DIR/bin to PATH variable"
+    ;;
+  update)
+    echo " *** Updating components"
+    update_llvm
+    echo " *** All components updated"
+    build_and_install
+    ;;
+  *)
+    echo " *** Usage: $0 install|update"
+    exit -1
+    ;;
+esac

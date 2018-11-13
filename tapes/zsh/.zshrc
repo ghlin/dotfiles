@@ -12,10 +12,10 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/sudo
   zgen oh-my-zsh plugins/autojump
 
+  zgen load ghlin/zsh-theme-daily daily
+  zgen load leophys/zsh-plugin-fzf-finder
   zgen load zsh-users/zsh-completions
   zgen load zsh-users/zsh-syntax-highlighting
-  zgen load leophys/zsh-plugin-fzf-finder
-  zgen load ghlin/zsh-theme-daily daily
 
   zgen save
 fi

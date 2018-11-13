@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+DST_FOLDER="$HOME/.klei/DoNotStarveTogether"
+
+BACKUP_NAME="BACKUP_$(date -I)"
+
+cd $DST_FOLDER
+
+zip $BACKUP_NAME -r Cluster_1
