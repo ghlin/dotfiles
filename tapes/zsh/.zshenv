@@ -6,15 +6,13 @@ export EDITOR=nvim
 export ELECTRON_TRASH=gio
 
 alias open=xdg-open
-alias vim=nvim
-alias vi=nvim
+alias nvi=nvim
+alias nv=nvim
+alias ng=nvim-gtk
 alias s=stack
 alias setup-proxy="source $HOME/.local/share/setup-proxy.sh"
 alias stack-new="stack --resolver=lts-10.2 new "
-alias goodjob="task del"
 alias ag='ag --color-match=4'
-alias :e=nvim
-alias :q=exit
 alias cv=ydcv
 
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -29,3 +27,4 @@ if [[ "${TTY: :-1}" == "/dev/tty" ]]; then
   setfont Tamsyn8x16r
   popd > /dev/null
 fi
+
