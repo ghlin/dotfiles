@@ -50,7 +50,11 @@ todo() {
 }
 
 jj() {
-  cd `cat $HOME/.local/share/autojump/autojump.txt | cut -f 2 | fzf`
+  if [ $#@ -eq 0 ]; then
+    cd `cat $HOME/.local/share/autojump/autojump.txt | cut -f 2 | fzf`
+  else
+    j $@
+  fi
 }
 
 # zsh-users/zsh-syntax-highlighting:

@@ -1,5 +1,12 @@
 {
   "workbench.colorCustomizations": {
+    "[Panda Syntax]": {
+      "editor.background": "#000000",
+      "panel.background": "#000000",
+      "sideBar.background": "#000000",
+      "input.background": "#000000",
+      "input.border": "#a0a0a0"
+    },
     "[Ayu Dark]": {
       "editor.background": "#000000",
       "statusBar.background": "#000000",
@@ -174,12 +181,13 @@
   "window.menuBarVisibility": "hidden",
   "vim.handleKeys": { "<C-f>": false, "<C-n>": true, "<C-p>": true },
   "vim.insertModeKeyBindings": [ { "before": [ "z", "z" ], "after": [ "<Esc>" ] } ],
-  "vim.cursorStylePerMode.visual": "line",
-  "vim.cursorStylePerMode.normal": "block-outline",
-  "editor.fontFamily": "Inconsolata, 'Fixedsys Excelsior', 'Courier New', Consolas, 'Lucida Console', Monaco, Iosevka, monospace, 'SF Mono', 'Operator Mono Lig', 'Fira Code'",
+  "vim.cursorStylePerMode.visual": "block",
+  "vim.cursorStylePerMode.normal": "block",
+  "editor.fontFamily": "'Lucida Console', 'Courier New', Consolas, 'Fira Code', 'SF Mono', Inconsolata, 'Fixedsys Excelsior', Monaco, Iosevka, monospace, 'Operator Mono Lig'",
   // "editor.fontWeight": "400",
   "workbench.editor.showTabs": false,
   "editor.tabSize": 2,
+  "editor.detectIndentation": true,
   "editor.minimap.enabled": false,
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
   "haskell.hlint.run": "onSave",
@@ -204,7 +212,7 @@
     https://stackoverflow.com/questions/40891692/any-way-to-disable-or-hide-visual-studio-codes-scrollbar-minimap
   */
   // "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
+  // "editor.scrollbar.vertical": "hidden",
   "editor.renderIndentGuides": false,
   "editor.renderControlCharacters": true,
   "workbench.editor.showIcons": false,
@@ -221,21 +229,17 @@
   "todohighlight.isEnable": true,
   "todohighlight.defaultStyle": {
     "backgroundColor": "#000000",
-    "color": "#ffffff"
+    "color": "#FF0000"
   },
   "todohighlight.keywords": [ "NOTE", "XXX" ],
   "terminal.integrated.rendererType": "dom",
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "workbench.commandPalette.preserveInput": true,
-  // "editor.fontWeight": "500",
-  "editor.wordWrap": "on",
   "editor.wrappingIndent": "same",
   "workbench.iconTheme": null,
-  "breadcrumbs.enabled": false,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "editor.fontSize": 16,
   "vim.foldfix": true,
-  "workbench.colorTheme": "Default High Contrast",
   "terminal.integrated.fontSize": 18,
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
@@ -246,4 +250,6 @@
     "**/dist": true,
     "**/node_modules": true
   },
+  "workbench.colorTheme": "Default High Contrast",
+  "vim.cursorStylePerMode.insert": "line",
 }
