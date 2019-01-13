@@ -31,5 +31,14 @@
 			"",
 			"}"
 		]
+	},
+
+	"Msg_* Handler": {
+		"prefix": "handl",
+		"body": [
+			"const handle$1 = mkHandler<$1>((snapshot, self, m) => {",
+			"  return snapshot;",
+			"});"
+		]
 	}
 }

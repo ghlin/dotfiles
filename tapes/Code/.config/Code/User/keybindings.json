@@ -371,5 +371,10 @@
         "key": "ctrl+w",
         "command": "-workbench.action.closeGroup",
         "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
     }
 ]

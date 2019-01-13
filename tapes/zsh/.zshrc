@@ -66,3 +66,4 @@ ZSH_HIGHLIGHT_STYLES[comment]="fg=magenta,bold"
 # if [ "$TMUX" == "" ]; then
 #   exec tmux
 # fi
+

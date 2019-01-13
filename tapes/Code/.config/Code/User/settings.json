@@ -1,12 +1,12 @@
 {
   "workbench.colorCustomizations": {
-    "[Panda Syntax]": {
+    /* "[Panda Syntax]": {
       "editor.background": "#000000",
       "panel.background": "#000000",
       "sideBar.background": "#000000",
       "input.background": "#000000",
       "input.border": "#a0a0a0"
-    },
+    }, */
     "[Ayu Dark]": {
       "editor.background": "#000000",
       "statusBar.background": "#000000",
@@ -179,11 +179,27 @@
   "workbench.activityBar.visible": false,
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
-  "vim.handleKeys": { "<C-f>": false, "<C-n>": true, "<C-p>": true },
-  "vim.insertModeKeyBindings": [ { "before": [ "z", "z" ], "after": [ "<Esc>" ] } ],
-  "vim.cursorStylePerMode.visual": "block",
+  "vim.handleKeys": {
+    "<C-f>": true,
+    "<C-n>": true,
+    "<C-p>": true,
+    "<C-x>": true,
+    "<C-u>": true,
+    "<C-d>": true
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "z",
+        "z"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
   "vim.cursorStylePerMode.normal": "block",
-  "editor.fontFamily": "'Lucida Console', 'Courier New', Consolas, 'Fira Code', 'SF Mono', Inconsolata, 'Fixedsys Excelsior', Monaco, Iosevka, monospace, 'Operator Mono Lig'",
+  "editor.fontFamily": "Consolas, 'Fixedsys Excelsior', 'Lucida Console', 'Fira Code', 'Courier New', SimSun, 'SF Mono', Monaco, 'Scientific', Iosevka, 'Operator Mono Lig', Inconsolata, monospace",
   // "editor.fontWeight": "400",
   "workbench.editor.showTabs": false,
   "editor.tabSize": 2,
@@ -248,8 +264,20 @@
   },
   "files.exclude": {
     "**/dist": true,
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/*.jpg": false,
+    "**/*.png": false,
+    "**/*.gif": false,
   },
-  "workbench.colorTheme": "Default High Contrast",
   "vim.cursorStylePerMode.insert": "line",
+  "window.titleBarStyle": "native",
+  "editor.fontWeight": "500",
+  "languageServerHaskell.hieExecutablePath": "hie-wrapper",
+  "vim.cursorStylePerMode.visual": "line",
+  "vim.cursorStylePerMode.replace": "underline",
+  "vim.cursorStylePerMode.visualblock": "line",
+  "vim.cursorStylePerMode.visualline": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "workbench.colorTheme": "Default High Contrast",
 }
