@@ -1,31 +1,5 @@
 {
   "workbench.colorCustomizations": {
-    /* "[Panda Syntax]": {
-      "editor.background": "#000000",
-      "panel.background": "#000000",
-      "sideBar.background": "#000000",
-      "input.background": "#000000",
-      "input.border": "#a0a0a0"
-    }, */
-    "[Ayu Dark]": {
-      "editor.background": "#000000",
-      "statusBar.background": "#000000",
-      "statusBar.border": "#ffffff",
-      "sideBar.border": "#ffffff",
-      "activityBar.border": "#ffffff",
-      "panel.border": "#ffffff",
-      "contrastActiveBorder": "#ffffff",
-      "contrastBorder": "#aaaaaa",
-      "dropdown.border": "#ffffff",
-      "editorGroup.border": "#ffffff",
-      "panel.background": "#101010",
-      "sideBar.background": "#101010",
-      "tab.border": "#ffffff",
-      "panelTitle.activeBorder": "#dddddd",
-      "editorWidget.border": "#ffffff",
-    },
-    "[Base16 Grayscale Dark]": {
-    },
    "[Base16 Grayscale Light]": {
       "activityBar.background": "#dddddd",
       "activityBar.border": "#000000",
@@ -153,7 +127,7 @@
           "scope": "keyword.operator",
           "settings": {
             "foreground": "#464646",
-            "fontStyle": ""
+            "fontStyle": "bold"
           }
         }
       ],
@@ -162,23 +136,19 @@
         "foreground": "#000000"
       },
       "variables": "#000000",
-      "keywords": {
-        "fontStyle": "underline",
-        "foreground": "#000000"
-      },
       "comments": {
-        // "fontStyle": "italic",
+        "fontStyle": "italic",
         "foreground": "#979797"
       },
       "types": {
-        "foreground": "#000000"
-        // "fontStyle": ""
+        "foreground": "#000000",
+        "fontStyle": ""
       }
     }
   },
   "workbench.activityBar.visible": false,
+  "breadcrumbs.enabled": true,
   "window.enableMenuBarMnemonics": false,
-  "window.menuBarVisibility": "hidden",
   "vim.handleKeys": {
     "<C-f>": true,
     "<C-n>": true,
@@ -199,14 +169,12 @@
     }
   ],
   "vim.cursorStylePerMode.normal": "block",
-  "editor.fontFamily": "Consolas, 'Fixedsys Excelsior', 'Lucida Console', 'Fira Code', 'Courier New', SimSun, 'SF Mono', Monaco, 'Scientific', Iosevka, 'Operator Mono Lig', Inconsolata, monospace",
-  // "editor.fontWeight": "400",
+  "editor.fontFamily": "'Iosevka SS10', 'Fixedsys Excelsior', Consolas, 'Courier New', 'Lucida Console', Inconsolata, Monaco, 'Fira Code'",
   "workbench.editor.showTabs": false,
   "editor.tabSize": 2,
   "editor.detectIndentation": true,
   "editor.minimap.enabled": false,
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-  "haskell.hlint.run": "onSave",
   "terminal.explorerKind": "external",
   "editor.cursorStyle": "block",
   "editor.cursorWidth": 3,
@@ -224,30 +192,15 @@
   "tslint.autoFixOnSave": true,
   "editor.accessibilitySupport": "off",
   "workbench.statusBar.feedback.visible": false,
-  /*
-    https://stackoverflow.com/questions/40891692/any-way-to-disable-or-hide-visual-studio-codes-scrollbar-minimap
-  */
-  // "editor.scrollbar.horizontal": "hidden",
-  // "editor.scrollbar.vertical": "hidden",
   "editor.renderIndentGuides": false,
   "editor.renderControlCharacters": true,
   "workbench.editor.showIcons": false,
   "workbench.tree.horizontalScrolling": true,
   "http.proxy": "http://localhost:8123",
   "editor.selectionHighlight": false,
-  "indenticator.inner.showHighlight": false,
   "editor.roundedSelection": false,
   "editor.showFoldingControls": "always",
-  "indenticator.inner.style": "inset",
-  "indenticator.style": "inset",
-  "liveServer.settings.donotShowInfoMsg": true,
   "zenMode.fullScreen": false,
-  "todohighlight.isEnable": true,
-  "todohighlight.defaultStyle": {
-    "backgroundColor": "#000000",
-    "color": "#FF0000"
-  },
-  "todohighlight.keywords": [ "NOTE", "XXX" ],
   "terminal.integrated.rendererType": "dom",
   "workbench.statusBar.visible": false,
   "workbench.commandPalette.preserveInput": true,
@@ -269,15 +222,19 @@
     "**/*.png": false,
     "**/*.gif": false,
   },
-  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.insert": "line-thin",
   "window.titleBarStyle": "native",
-  "editor.fontWeight": "500",
-  "languageServerHaskell.hieExecutablePath": "hie-wrapper",
+  "editor.fontWeight": "normal",
   "vim.cursorStylePerMode.visual": "line",
   "vim.cursorStylePerMode.replace": "underline",
   "vim.cursorStylePerMode.visualblock": "line",
   "vim.cursorStylePerMode.visualline": "line",
   "terminal.integrated.cursorBlinking": true,
   "editor.cursorSmoothCaretAnimation": true,
-  "workbench.colorTheme": "Default High Contrast",
+  "workbench.colorTheme": "Solarized Dark",
+  "window.menuBarVisibility": "hidden",
+  "workbench.settings.editor": "json",
+  "files.trimTrailingWhitespace": true,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+  // "editor.renderWhitespace": "boundary",
 }
