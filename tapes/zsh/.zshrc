@@ -2,9 +2,6 @@
 
 source $HOME/.zgen/zgen.zsh
 
-export DISABLE_AUTO_UPDATE="true"
-export DISABLE_LS_COLORS="true"
-
 if ! zgen saved; then
   zgen oh-my-zsh
 
@@ -12,6 +9,7 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/sudo
   zgen oh-my-zsh plugins/autojump
 
+  zgen load esc/conda-zsh-completion
   zgen load ghlin/zsh-theme-daily daily
   zgen load leophys/zsh-plugin-fzf-finder
   zgen load zsh-users/zsh-completions
@@ -57,6 +55,26 @@ jj() {
   fi
 }
 
+style() {
+  [ -f $1.tsx  ] || echo "import * as style from './$1.scss'" >> $1.tsx
+  [ -f $1.scss ] || touch $1.scss
+}
+
+
+tarn() {
+  for pkg in $@; do
+    echo "Adding type defn for pkg $pkg..."
+    yarn add -D @types/$1
+  done
+}
+
+tdep() {
+  for pkg in $@; do
+    echo "Adding type defn for pkg $pkg..."
+    yarn add -D @types/$1 && yarn add $1
+  done
+}
+
 # zsh-users/zsh-syntax-highlighting:
 # the default style for comments is "fg=black,bold"
 # which is hard to read on a dark background
@@ -66,4 +84,10 @@ ZSH_HIGHLIGHT_STYLES[comment]="fg=magenta,bold"
 # if [ "$TMUX" == "" ]; then
 #   exec tmux
 # fi
+
+export PYTHONNOUSERSITE=1
+
+alias conda-activate="source /opt/anaconda/bin/activate"
+alias conda-deactivate="source /opt/anaconda/bin/deactivate"
+
 

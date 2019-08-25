@@ -235,6 +235,7 @@
   "window.menuBarVisibility": "hidden",
   "workbench.settings.editor": "json",
   "files.trimTrailingWhitespace": true,
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "sync.gist": "2ad0de28c26b5a0e3b430bcf4c990804"
   // "editor.renderWhitespace": "boundary",
 }
