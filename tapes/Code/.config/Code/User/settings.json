@@ -195,7 +195,7 @@
   "editor.renderIndentGuides": false,
   "editor.renderControlCharacters": true,
   "workbench.editor.showIcons": false,
-  "workbench.tree.horizontalScrolling": true,
+  "workbench.list.horizontalScrolling": true,
   "http.proxy": "http://localhost:8123",
   "editor.selectionHighlight": false,
   "editor.roundedSelection": false,
@@ -236,6 +236,8 @@
   "workbench.settings.editor": "json",
   "files.trimTrailingWhitespace": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "sync.gist": "2ad0de28c26b5a0e3b430bcf4c990804"
+  "sync.gist": "2ad0de28c26b5a0e3b430bcf4c990804",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
   // "editor.renderWhitespace": "boundary",
 }
