@@ -21,10 +21,8 @@ fi
 export LANG=en_US.UTF-8
 
 # alias load-nvm="source /usr/share/nvm/init-nvm.sh"
-source /usr/share/nvm/init-nvm.sh
-
-alias sale-to-the-py='source /opt/anaconda/bin/activate root'
-alias stop-sale-to-the-py='source /opt/anaconda/bin/deactivate root'
+local _NVM_INIT="/usr/share/nvm/init-nvm.sh"
+[ -f "$_NVM_INIT" ] && source "$_NVM_INIT";
 
 update_term_info() {
   export TERM_BACKGROUND=$(xtermcontrol --get-bg)
@@ -60,18 +58,42 @@ style() {
   [ -f $1.scss ] || touch $1.scss
 }
 
+typeset -A _NODE_PM_ADD_ARGS_BY_NAME;
+typeset -A _NODE_PM_DEV_ADD_ARGS_BY_NAME;
+local _NODE_PM_ADD_ARGS_BY_NAME=(npm     'install --save'     yarn 'add');
+local _NODE_PM_DEV_ADD_ARGS_BY_NAME=(npm 'install --save-dev' yarn 'add -D');
 
-tarn() {
+add-packages() {
+  local pm=yarn
+  if [[ "$1" == "yarn" || "$1" == "npm" ]]; then
+    pm=$1;
+    shift
+  fi
+
   for pkg in $@; do
-    echo "Adding type defn for pkg $pkg..."
-    yarn add -D @types/$1
+    local command1="$pm ${_NODE_PM_DEV_ADD_ARGS_BY_NAME[$pm]} @types/$pkg"
+    local command2="$pm ${_NODE_PM_ADD_ARGS_BY_NAME[$pm]}     $pkg"
+    echo "\$ $command1"      \
+      && eval "$command1"    \
+      && echo "\$ $command2" \
+      && eval "$command2"
   done
 }
 
-tdep() {
+add-dev-packages() {
+  local pm=yarn
+  if [[ "$1" == "yarn" || "$1" == "npm" ]]; then
+    pm=$1;
+    shift
+  fi
+
   for pkg in $@; do
-    echo "Adding type defn for pkg $pkg..."
-    yarn add -D @types/$1 && yarn add $1
+    local command1="$pm ${_NODE_PM_DEV_ADD_ARGS_BY_NAME[$pm]} @types/$pkg"
+    local command2="$pm ${_NODE_PM_DEV_ADD_ARGS_BY_NAME[$pm]} $pkg"
+    echo "\$ $command1"      \
+      && eval "$command1"    \
+      && echo "\$ $command2" \
+      && eval "$command2"
   done
 }
 
@@ -87,7 +109,5 @@ ZSH_HIGHLIGHT_STYLES[comment]="fg=magenta,bold"
 
 export PYTHONNOUSERSITE=1
 
-alias conda-activate="source /opt/anaconda/bin/activate"
-alias conda-deactivate="source /opt/anaconda/bin/deactivate"
 
 
