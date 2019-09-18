@@ -14,6 +14,7 @@ if ! zgen saved; then
   zgen load leophys/zsh-plugin-fzf-finder
   zgen load zsh-users/zsh-completions
   zgen load zsh-users/zsh-syntax-highlighting
+  zgen load zsh-users/zsh-autosuggestions
 
   zgen save
 fi
