@@ -10,6 +10,9 @@ export ELECTRON_TRASH=gio
 alias open=xdg-open
 alias nvi=nvim
 alias hvi='PAPERLIKE=PAPERLIKE nvim'
+# nvi xxxx <CTRL-A> h -> hnvi xxxx
+alias hnvi='PAPERLIKE=PAPERLIKE nvim'
+alias hnv='PAPERLIKE=PAPERLIKE nvim'
 alias nv=nvim
 alias ng=nvim-gtk
 alias s=stack
@@ -17,6 +20,18 @@ alias setup-proxy="source $HOME/.local/share/setup-proxy.sh"
 alias stack-new="stack --resolver=lts-10.2 new "
 alias ag='ag --color-match=4'
 alias cv=ydcv
+
+function toggleproxy() {
+  if [[ -z "$HTTP_PROXY" || -z "$HTTPS_PROXY" || -z "$ALL_PROXY" ]]; then
+    source $HOME/.local/share/setup-proxy.sh
+    echo "proxy on"
+  else
+    unset HTTP_PROXY
+    unset HTTPS_PROXY
+    unset ALL_PROXY
+    echo "proxy off"
+  fi
+}
 
 export XDG_CONFIG_HOME="$HOME/.config"
 if [[ $TILIX_ID ]]; then

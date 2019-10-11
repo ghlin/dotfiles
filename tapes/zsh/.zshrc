@@ -14,6 +14,7 @@ if ! zgen saved; then
   zgen load leophys/zsh-plugin-fzf-finder
   zgen load zsh-users/zsh-completions
   zgen load zsh-users/zsh-syntax-highlighting
+  zgen load zsh-users/zsh-autosuggestions
 
   zgen save
 fi
@@ -102,6 +103,9 @@ add-dev-packages() {
 # which is hard to read on a dark background
 # change it to a more readable color here.
 ZSH_HIGHLIGHT_STYLES[comment]="fg=magenta,bold"
+
+# zsh-users/zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan,italic"
 
 # if [ "$TMUX" == "" ]; then
 #   exec tmux
