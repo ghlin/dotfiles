@@ -66,9 +66,12 @@ function run_install() {
   ninja install
 }
 
-function build_and_install() {
+function run_cmake() {
   echo " *** Running cmake"
   refresh_build
+}
+
+function build_and_install() {
   echo " *** Build"
   run_build
   echo " *** Build done, install to $LLVM_INSTALL_DIR/..."
@@ -76,12 +79,17 @@ function build_and_install() {
   echo " *** Install done"
 }
 
+function first_build_and_install() {
+  run_cmake;
+  build_and_install;
+}
+
 case $1 in
   install)
     echo " *** Cloning llvm components to $LLVM_TREE_DIR/..."
     install_llvm
     echo " *** All components cloned"
-    build_and_install
+    first_build_and_install
     echo " *** Remember to add $LLVM_INSTALL_DIR/bin to PATH variable"
     ;;
   update)
