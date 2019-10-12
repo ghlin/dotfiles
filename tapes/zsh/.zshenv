@@ -1,3 +1,4 @@
+export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
 export PATH=$HOME/.local/lib/llvm/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.local/share/go/bin:$PATH
 export EDITOR=nvim
 
