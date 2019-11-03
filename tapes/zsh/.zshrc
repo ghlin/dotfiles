@@ -6,6 +6,7 @@ if ! zgen saved; then
   zgen oh-my-zsh
 
   zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/fzf
   zgen oh-my-zsh plugins/sudo
   zgen oh-my-zsh plugins/autojump
 
@@ -113,5 +114,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan,italic"
 
 export PYTHONNOUSERSITE=1
 
-
+if [ -f "$HOME/.localzshrc" ]; then
+  source $HOME/.localzshrc
+fi
 
