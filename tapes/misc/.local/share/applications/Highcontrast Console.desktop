@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Highcontrast Console
+Comment=Use the commandline, (Highcontrast profile)
+Keywords=shell;prompt;command;commandline;cmd;
+Exec=tilix -p Paperlike
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=System;TerminalEmulator;
+Icon=com.gexperts.Tilix
+

@@ -114,7 +114,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan,italic"
 
 export PYTHONNOUSERSITE=1
 
-if [ -f "$HOME/.localzshrc" ]; then
-  source $HOME/.localzshrc
+if [ -f "$HOME/.override.zsh" ]; then
+  source $HOME/.override.zsh
 fi
 
