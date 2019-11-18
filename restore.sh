@@ -5,6 +5,15 @@ DEST="$1"
 
 [[ -z $DEST ]] && DEST=$HOME
 
+mkdir -pv $DEST/.config/Code/User
+mkdir -pv $DEST/.config/fontconfig
+mkdir -pv $DEST/.config/htop
+mkdir -pv $DEST/.config/tilix/schemes
+mkdir -pv $DEST/.config/redshift
+mkdir -pv $DEST/.local/lib
+mkdir -pv $DEST/.local/bin
+mkdir -pv $DEST/.local/share/applications
+
 echo " ** target dir is $DEST"
 
 if [ -L "$THIS" ]; then
