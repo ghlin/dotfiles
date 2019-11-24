@@ -1,5 +1,6 @@
 export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
-export PATH=$HOME/.local/lib/llvm/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.local/share/go/bin:$PATH
+export GOPATH=$HOME/.local/lib/go
+export PATH=$HOME/.local/lib/llvm/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.local/lib/go/bin:$PATH
 export EDITOR=nvim
 
 export LS_COLORS="ln=4;32:ow=1;32;107:$LS_COLORS"
