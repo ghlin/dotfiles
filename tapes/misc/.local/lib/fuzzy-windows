@@ -131,7 +131,7 @@ class FuzzyWindow(Gtk.Window):
 
         # Set up the box to enter an app name
         self.enteredName = Gtk.Entry()
-        self.vbox.pack_start(self.enteredName, True, True, 0)
+        self.vbox.pack_start(self.enteredName, False, True, 0)
 
         # Create a store for data
         self.appListStore = Gtk.ListStore(str, GdkPixbuf.Pixbuf)
