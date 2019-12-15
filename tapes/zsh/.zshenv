@@ -1,5 +1,9 @@
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
 export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
 export GOPATH=$HOME/.local/lib/go
+export R_LIBS_USER=$HOME/.local/lib/R
 export PATH=$HOME/.local/lib/llvm/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.local/lib/go/bin:$PATH
 export EDITOR=nvim
 
