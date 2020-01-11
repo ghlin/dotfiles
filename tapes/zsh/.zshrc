@@ -32,15 +32,17 @@ update_term_info() {
 }
 
 todo() {
-  done_cmd="done"
-  delete_cmd="delete"
-  add_cmd="add"
+  local done_cmd="done"
+  local delete_cmd="delete"
+  local add_cmd="add"
 
-  if [ $#@ -eq 0 ]; then
+  local input1=$1
+
+  if [[ $#@ -eq 0 ]]; then
     task
-  elif [ "${done_cmd: :$#1}" == $1 ]; then
+  elif [[ "${done_cmd: :$#input1}" == $input1 ]]; then
     task 'done' ${@:2}
-  elif [ "${delete_cmd: :$#1}" == $1 ]; then
+  elif [[ "${delete_cmd: :$#input1}" == $input1 ]]; then
     task delete ${@:2}
   else
     task add $@
