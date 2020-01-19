@@ -9,6 +9,7 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/fzf
   zgen oh-my-zsh plugins/sudo
   zgen oh-my-zsh plugins/autojump
+  zgen oh-my-zsh plugins/tmuxinator
 
   zgen load esc/conda-zsh-completion
   zgen load ghlin/zsh-theme-daily daily
@@ -114,7 +115,16 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan,italic"
 #   exec tmux
 # fi
 
-export PYTHONNOUSERSITE=1
+export PYTHONNOUSERSITE=0
+set-python-usersite() {
+  if [ $#@ -eq 0 ]; then
+    export PYTHONNOUSERSITE=$((1 - $PYTHONNOUSERSITE))
+  else
+    export PYTHONNOUSERSITE=$1
+  fi
+
+  echo "PYTHONNOUSERSITE => $PYTHONNOUSERSITE"
+}
 
 if [ -f "$HOME/.override.zsh" ]; then
   source $HOME/.override.zsh
