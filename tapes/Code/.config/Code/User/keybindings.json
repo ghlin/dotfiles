@@ -61,10 +61,6 @@
         "when": "terminalFocus && terminalTextSelected"
     },
     {
-        "key": "ctrl+alt+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
         "key": "alt+f",
         "command": "actions.find"
     },
@@ -294,7 +290,7 @@
         "when": "inQuickOpen"
     },
     {
-        "key": "alt+n", // "cmd+n" on mac
+        "key": "ctrl+alt+n", // "cmd+n" on mac
         "command": "extension.advancedNewFile",
     },
     {
@@ -396,5 +392,14 @@
         "key": "ctrl+k ctrl+i",
         "command": "-editor.debug.action.showDebugHover",
         "when": "editorTextFocus && inDebugMode"
+    },
+    {
+        "key": "alt+b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "alt+n",
+        "command": "workbench.action.quickOpen"
     }
 ]

@@ -6,6 +6,7 @@ DEST="$1"
 [[ -z $DEST ]] && DEST=$HOME
 
 mkdir -pv $DEST/.config/Code/User
+mkdir -pv $DEST/.config/VSCodium/User
 mkdir -pv $DEST/.config/fontconfig
 mkdir -pv $DEST/.config/htop
 mkdir -pv $DEST/.config/tilix/schemes
