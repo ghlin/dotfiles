@@ -32,6 +32,7 @@ alias setup-proxy="source $HOME/.local/share/setup-proxy.sh"
 alias stack-new="stack --resolver=lts-10.2 new "
 alias ag='ag --color-match=4'
 alias cv=ydcv
+alias e=$HOME/.local/lib/edit.sh
 
 function toggleproxy() {
   if [[ -z "$HTTP_PROXY" || -z "$HTTPS_PROXY" || -z "$ALL_PROXY" ]]; then
