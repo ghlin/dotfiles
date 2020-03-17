@@ -1,0 +1,8 @@
+#!/bin/sh
+
+pattern=$1
+
+shift
+
+sed -n "/$pattern/ { p; :a; n; p; ba; }" $*
+
