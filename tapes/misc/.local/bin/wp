@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [[ -z "$HTTP_PROXY" ]]; then
+  PREVIOUS_PROXY_STATE=0
+else
+  PREVIOUS_PROXY_STATE=1
+fi
+
+cleanup() {
+  echo ""
+  echo ":: Cleaning up"
+
+  if [[ $PREVIOUS_PROXY_STATE -eq 0 ]]; then
+    unset HTTP_PROXY
+    unset HTTPS_PROXY
+    unset ALL_PROXY
+  fi
+}
+
+trap cleanup            EXIT
+
+echo ":: Running under proxy: [$*]"
+
+if [[ $PREVIOUS_PROXY_STATE -eq 0 ]]; then
+  source $HOME/.local/share/setup-proxy.sh
+fi
+
+# now run it.
+$*
+
