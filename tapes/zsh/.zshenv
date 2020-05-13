@@ -5,6 +5,7 @@ export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
 export GOPATH=$HOME/.local/lib/go
 export R_LIBS_USER=$HOME/.local/lib/R
 export PATH=$HOME/.local/lib/llvm/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.local/lib/go/bin:$PATH
+export MAKEFLAGS="$MAKEFLAGS --no-print-directory"
 export EDITOR=nvim
 
 export LS_COLORS="ln=4;32:ow=1;32;107:$LS_COLORS"
