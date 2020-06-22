@@ -58,50 +58,6 @@ jj() {
   fi
 }
 
-style() {
-  [ -f $1.tsx  ] || echo "import * as style from './$1.scss'" >> $1.tsx
-  [ -f $1.scss ] || touch $1.scss
-}
-
-typeset -A _NODE_PM_ADD_ARGS_BY_NAME;
-typeset -A _NODE_PM_DEV_ADD_ARGS_BY_NAME;
-local _NODE_PM_ADD_ARGS_BY_NAME=(npm     'install --save'     yarn 'add');
-local _NODE_PM_DEV_ADD_ARGS_BY_NAME=(npm 'install --save-dev' yarn 'add -D');
-
-add-packages() {
-  local pm=yarn
-  if [[ "$1" == "yarn" || "$1" == "npm" ]]; then
-    pm=$1;
-    shift
-  fi
-
-  for pkg in $@; do
-    local command1="$pm ${_NODE_PM_DEV_ADD_ARGS_BY_NAME[$pm]} @types/$pkg"
-    local command2="$pm ${_NODE_PM_ADD_ARGS_BY_NAME[$pm]}     $pkg"
-    echo "\$ $command1"      \
-      && eval "$command1"    \
-      && echo "\$ $command2" \
-      && eval "$command2"
-  done
-}
-
-add-dev-packages() {
-  local pm=yarn
-  if [[ "$1" == "yarn" || "$1" == "npm" ]]; then
-    pm=$1;
-    shift
-  fi
-
-  for pkg in $@; do
-    local command1="$pm ${_NODE_PM_DEV_ADD_ARGS_BY_NAME[$pm]} @types/$pkg"
-    local command2="$pm ${_NODE_PM_DEV_ADD_ARGS_BY_NAME[$pm]} $pkg"
-    echo "\$ $command1"      \
-      && eval "$command1"    \
-      && echo "\$ $command2" \
-      && eval "$command2"
-  done
-}
-
 # zsh-users/zsh-syntax-highlighting:
 # the default style for comments is "fg=black,bold"
 # which is hard to read on a dark background
