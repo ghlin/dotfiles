@@ -26,5 +26,5 @@ if [[ $PREVIOUS_PROXY_STATE -eq 0 ]]; then
 fi
 
 # now run it.
-$*
+$SHELL -i -c "$*"
 
