@@ -42,7 +42,7 @@ done
 [[ -d nvim ]] || (
   mkdir nvim/.config -p;
   echo " => downloading vim config";
-  git clone https://git.coding.net/ghlin/vimrc.git nvim/.config/nvim
+  git clone https://github.com/ghlin/vimrc nvim/.config/nvim
 )
 
 restore_config_for nvim
