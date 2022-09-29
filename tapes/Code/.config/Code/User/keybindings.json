@@ -401,5 +401,21 @@
     {
         "key": "alt+n",
         "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "-workbench.action.gotoSymbol"
     }
 ]
