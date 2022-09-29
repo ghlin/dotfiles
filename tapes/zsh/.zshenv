@@ -1,3 +1,19 @@
+if [[ $ZPROF == 2 ]]; then
+  PS4=$'\\\011%D{%s%6.}\011%x\011%I\011%N\011%e\011'
+  setopt PROMPT_SUBST
+
+  logfile=$(mktemp zsh_profile.XXXXXX)
+  echo "Logging to $logfile"
+  exec 3>&2 2>$logfile
+
+  setopt XTRACE
+fi
+
+if [[ $ZPROF == 1 ]]; then
+  zmodload zsh/zprof
+fi
+
+
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
@@ -85,5 +101,3 @@ if [[ "${TTY: :-1}" == "/dev/tty" ]]; then
 
   popd > /dev/null
 fi
-
-source /usr/share/nvm/init-nvm.sh

@@ -1,29 +1,32 @@
-if [[ $ZPROF == 1 ]]; then
-  zmodload zsh/zprof
-fi
-
 export DISABLE_AUTO_UPDATE=true
+export NVM_LAZY_LOAD=true
 
-[[ -d $HOME/.zgen ]] || git clone https://github.com/tarjoilija/zgen.git "$HOME/.zgen"
+[[ -d $HOME/.zgenom ]] || git clone https://github.com/jandamm/zgenom.git "$HOME/.zgenom"
 
-source $HOME/.zgen/zgen.zsh
+source $HOME/.zgenom/zgenom.zsh
 
-if ! zgen saved; then
-  zgen oh-my-zsh
+if ! zgenom saved; then
+  zgenom ohmyzsh
 
-  zgen oh-my-zsh plugins/git
-  zgen oh-my-zsh plugins/fzf
-  zgen oh-my-zsh plugins/sudo
-  zgen oh-my-zsh plugins/autojump
-  zgen oh-my-zsh plugins/tmuxinator
+  zgenom ohmyzsh plugins/git
+  zgenom ohmyzsh plugins/fzf
+  zgenom ohmyzsh plugins/sudo
+  zgenom ohmyzsh plugins/autojump
+  zgenom ohmyzsh plugins/tmuxinator
 
-  zgen load ghlin/zsh-theme-daily daily
-  zgen load buonomo/yarn-completion
-  zgen load zsh-users/zsh-completions
-  zgen load zsh-users/zsh-syntax-highlighting
-  zgen load zsh-users/zsh-autosuggestions
+  zgenom load ghlin/zsh-theme-daily daily
 
-  zgen save
+  zgenom load lukechilds/zsh-nvm
+
+  zgenom load buonomo/yarn-completion
+  zgenom load zsh-users/zsh-completions
+
+  zgenom load zsh-users/zsh-syntax-highlighting
+  zgenom load zsh-users/zsh-autosuggestions
+
+  zgenom save
+
+  zgenom compile "$HOME/.zshrc"
 fi
 
 todo() {
@@ -83,4 +86,9 @@ fi
 
 if [[ $ZPROF == 1 ]]; then
   zprof
+fi
+
+if [[ $ZPROF == 2 ]]; then
+  unsetopt XTRACE
+  exec 2>&3 3>&-
 fi
