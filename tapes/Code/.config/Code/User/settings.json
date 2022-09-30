@@ -147,7 +147,6 @@
     }
   },
   "workbench.activityBar.visible": false,
-  "breadcrumbs.enabled": false,
   "window.enableMenuBarMnemonics": false,
   "vim.handleKeys": {
     "<C-f>": true,
@@ -249,12 +248,12 @@
   },
   "gitlens.plusFeatures.enabled": false,
   "workbench.tips.enabled": false,
-  "breadcrumbs.icons": false,
   "window.zoomLevel": 0.4,
   "workbench.iconTheme": null,
   "workbench.view.alwaysShowHeaderActions": true,
   "workbench.editor.showIcons": false,
   "screencastMode.fontSize": 20,
   "telemetry.telemetryLevel": "crash",
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": false
 }

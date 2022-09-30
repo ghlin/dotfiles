@@ -1,5 +1,4 @@
 export DISABLE_AUTO_UPDATE=true
-export NVM_LAZY_LOAD=true
 
 [[ -d $HOME/.zgenom ]] || git clone https://github.com/jandamm/zgenom.git "$HOME/.zgenom"
 
@@ -16,8 +15,6 @@ if ! zgenom saved; then
 
   zgenom load ghlin/zsh-theme-daily daily
 
-  zgenom load lukechilds/zsh-nvm
-
   zgenom load buonomo/yarn-completion
   zgenom load zsh-users/zsh-completions
 
@@ -26,6 +23,7 @@ if ! zgenom saved; then
 
   zgenom save
 
+  zgenom compile "$HOME/.zshenv"
   zgenom compile "$HOME/.zshrc"
 fi
 
