@@ -14,6 +14,7 @@ mkdir -pv $DEST/.config/redshift
 mkdir -pv $DEST/.local/lib
 mkdir -pv $DEST/.local/bin
 mkdir -pv $DEST/.local/share/applications
+mkdir -pv $DEST/.local/share/xfce4/terminal/colorschemes
 
 echo " ** target dir is $DEST"
 
